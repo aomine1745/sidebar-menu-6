@@ -114,7 +114,8 @@ section{
 	box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
 	z-index: 3;
 	transform: translateX(-100%);
-	transition: .5s;
+	/*transition: .5s;*/
+	transition: all .5s cubic-bezier(.32,2,.55,.27);
 }
 header.active ~ #nav {
 	transform: translateX(0);
