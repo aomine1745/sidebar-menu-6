@@ -34,6 +34,9 @@ header p{
 	padding: 10px 0;
 }
 .icon{
+	background-color: transparent;
+	border: none;
+	outline: none;
 	width: 40px;
 	height: 40px;
 	cursor: pointer;
@@ -50,6 +53,7 @@ header p{
 .hamburger:after{
 	content: '';
 	position: absolute;
+	left: 0;
 }
 .hamburger,
 .hamburger:before,
@@ -114,7 +118,6 @@ section{
 	box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
 	z-index: 3;
 	transform: translateX(-100%);
-	/*transition: .5s;*/
 	transition: all .5s cubic-bezier(.32,2,.55,.27);
 }
 header.active ~ #nav {
